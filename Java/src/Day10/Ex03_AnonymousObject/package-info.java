@@ -1,0 +1,1 @@
+package Day10.Ex03_AnonymousObject;

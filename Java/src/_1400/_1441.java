@@ -12,12 +12,12 @@ public class _1441 {
         int[] arr = new int[5];
         int n = arr.length;
         
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();	
 		}
-        System.out.println("정렬전" + Arrays.toString(arr));
+//        System.out.println("정렬전" + Arrays.toString(arr));
         
-		for (int i = 0; i < n - 1; i++) {
+		for (int i = 0; i < n - 1; i++) {//한자리는 남겨둔다
 			int min = i;// 최소값 저장
 			for (int j = i + 1; j < n; j++) {
 				if (arr[j] < arr[min])
@@ -27,9 +27,11 @@ public class _1441 {
 			arr[min] = arr[i];
 			arr[i] = temp;
 	  }	
-	
-	for (int i : arr) {
-		System.out.println("정렬후" + Arrays.toString(arr));
-	}
+		for (int i = 0; i < n; i++) {
+			System.out.print(arr[i] + " ");
+		}
+//	for (int i : arr) {
+//		System.out.println("정렬후" + Arrays.toString(arr));
+//	}
  }		
 }

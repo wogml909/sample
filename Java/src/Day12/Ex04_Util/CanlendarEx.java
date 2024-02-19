@@ -63,7 +63,9 @@ public class CanlendarEx {
 		long lastT = lastDay.getTimeInMillis();
 		long nowT = now.getTimeInMillis();
 		
-		//0.001초 :1ms
+		//getTimeInMillis()  : 날짜를 ms(밀리초) 단위까지 숫자로 반환
+		//1970년 1우러 1일 0시 0분 0초 0ms 부터 카운트한 숫자를 반환
+		//0.001초 :1ms   
 		//60초    :1분
 		//60분    :1시간
 		//24시    :1일
@@ -71,7 +73,30 @@ public class CanlendarEx {
 		
 		long dDAY = (lastT - nowT)/ (1000 * 60 * 60 * 24);
 		System.out.println("D - day  : " + dDAY);
+		
+		long nowD = nowT / (1000 * 60 * 60 * 24);
+		long lastD = lastT / (1000 * 60 * 60 * 24);
+		System.out.println("1970년 1월 1일 0시 0분 0초 0ms~오늘까지 일 수 : " + nowD);
+		System.out.println("1970년 1월 1일 0시 0분 0초 0ms~오늘까지 일 수 : " + lastD);
+		
+		
+		//내가 태어난지 몇 일
+		Calendar birth = Calendar.getInstance();
+		birth.set(1984, 9, 9, 12, 0, 0);       //생일 지정 
+		long birthD = birth.getTimeInMillis()/ (1000 * 60 * 60 * 24);
+		long afterBirth = nowD -birthD;
+		System.out.println("생후 " + afterBirth + "일이 지났습니다.");
+		
+		//*월(MONTH)는 0~11로 0이 1월을 의미하므로, 1월이면 0으로 지정해야한다
+		//-Calendar.JANUARY (0) 상수값을 가져와서 지정하는 것을 권장
+		if( now.before(lastDay)) {
+		System.out.println("종강 전입니다.");
 		}
+		else if(now.after(lastDay)) {
+			System.out.println("수업이 종료된 강의입니다.");
+		}
+	}
+
 }
 
 

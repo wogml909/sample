@@ -28,7 +28,7 @@ public class _1441 {
 			arr[i] = temp;
 	  }	
 		for (int i = 0; i < n; i++) {
-			System.out.print(arr[i] + " ");
+			System.out.println(arr[i] + " ");
 		}
 //	for (int i : arr) {
 //		System.out.println("정렬후" + Arrays.toString(arr));

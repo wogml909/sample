@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+
+
 public class Manager {
 
 	public static void main(String[] args) {
@@ -26,9 +28,7 @@ public class Manager {
 	public static LinkedList<Student> sortScoreAndNo(LinkedList<Student> list) {
 
 		LinkedList<Student> newList = (LinkedList<Student>) list.clone();
-
-		/* TODO 여기에 코드를 작성해보세요:D */
-
+	    newList.set(0, null);
 		return newList;
 	}
 

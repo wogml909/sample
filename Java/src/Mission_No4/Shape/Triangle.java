@@ -1,6 +1,6 @@
-package Day08.Ex02_Shape;
+package Mission_No4.Shape;
 
-public class Triangle extends Shape{
+public class Triangle extends shape {
 	
 	double width, height;
 	
@@ -17,7 +17,7 @@ public class Triangle extends Shape{
 	
 	@Override
 	double area() {
-		// (가로) x (세로) / 2		
+		// (가로) x (세로) / 2
 		return width * height / 2;
 	}
 
@@ -42,6 +42,11 @@ public class Triangle extends Shape{
 
 	public void setHeight(double height) {
 		this.height = height;
+	}
+
+	public String getArea() {
+  
+		return null;
 	}
     
 }

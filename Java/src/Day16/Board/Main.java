@@ -98,13 +98,14 @@ public class Main {
 	public static void select() {
 		System.out.println("####게시글 조회 #####");
 		System.out.print("글 번호 : ");
-		int no = sc.nextInt();     
+		int no = sc.nextInt();    
+		sc.nextLine(); //줄 없애기
         // 글 번호(no)를 전달하여 게시글 정보 데이터 요청
 		Board board = boardService.select(no);
 		//게시글 정보 출력
 		print(board);
 	}
-	/*
+	/* board service -> dao ->db
 	 * 게시글 등록
 	 * **/
 	public static void insert() {

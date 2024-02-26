@@ -2,6 +2,7 @@ package Day16.Board.DTO;
 
 import java.util.Date;
 
+//3.변수에 접근하는 GETTER SETTER 정의 
 //      게시글정보
 //      게시글 번호
 //      제목

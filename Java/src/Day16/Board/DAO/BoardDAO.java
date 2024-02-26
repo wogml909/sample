@@ -7,7 +7,7 @@ import java.util.List;
 import Day16.Board.DTO.Board;
 import Day16.JDBC.JDBConnection;
 
-/*
+/*  1.JDBCConnection 연결된후 테이블 매핑작업 직접데이터 접근
   * 데이터 접근 객체
   * 게시글 데이터 접근
   * 

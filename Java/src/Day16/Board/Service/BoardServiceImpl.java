@@ -6,7 +6,7 @@ import Day16.Board.DTO.Board;
 
 
 /*
- * 
+ * 2.
  * 게시판 기능 -비즈니스 로직 클래스
  *           1.기본구조
  *           3.데이터 접근 객체, 메소드연결
@@ -15,7 +15,7 @@ import Day16.Board.DTO.Board;
  * **/
 
 public class BoardServiceImpl implements BoardService {
-	
+	//데이터 접근객체 boardDAO
 	private BoardDAO boardDAO = new BoardDAO();
 
 	@Override

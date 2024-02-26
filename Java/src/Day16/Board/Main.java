@@ -24,7 +24,7 @@ public class Main {
 	 * 메뉴판
 	 * **/
 	public static void menu() {
-		System.out.println("######### 게시판 #########");
+		System.out.println("######### 게 시판 #########");
 		System.out.println("1. 게시글 목록");
 		System.out.println("2. 게시글 조회");
 		System.out.println("3. 게시글 등록");

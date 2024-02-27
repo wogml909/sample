@@ -1,7 +1,6 @@
-// module-info.java
-module JavaFXTest {
+module JavaFx_KeyEvent {
 	requires javafx.controls;
-	requires javafx.fxml;			// 추가
+	requires javafx.fxml;
 	
 	opens application to javafx.graphics, javafx.fxml;
 }

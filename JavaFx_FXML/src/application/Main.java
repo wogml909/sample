@@ -1,27 +1,32 @@
-// Main.java
 package application;
-	
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
+
 		try {
+
+			// 모듈 설정파일(module-info.java)에 fxml모듈 설정해야 사용가능
 			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+
+			// Scene생성
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+
+			// Stage 에 Scene 등록
 			stage.setScene(scene);
 			stage.show();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}

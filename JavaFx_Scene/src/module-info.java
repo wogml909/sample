@@ -1,7 +1,5 @@
-// module-info.java
-module JavaFXTest {
+module JavaFx_Scene {
 	requires javafx.controls;
-	requires javafx.fxml;			// 추가
 	
 	opens application to javafx.graphics, javafx.fxml;
 }

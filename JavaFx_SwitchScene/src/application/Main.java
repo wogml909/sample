@@ -1,4 +1,3 @@
-// Main.java
 package application;
 	
 import javafx.application.Application;
@@ -12,11 +11,12 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+			//scene1 을 시작화면(Stage)으로 지정
+			Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			stage.setScene(scene);
 			stage.show();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -26,3 +26,4 @@ public class Main extends Application {
 		launch(args);
 	}
 }
+

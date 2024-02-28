@@ -12,17 +12,20 @@ public class Team_04_Q02 {
 
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		int[] num = new int[5];
+		int a = 0 ; //홀수
+		int b = 0; //짝수
+		int count = 0;
 		
-		while (N <= 9) { // 10까지 범위
-			if (N % 2 != 0) { // 홀수이면
-			//	int num = num + 1;
-				System.out.print(num);
-			}else {
-			//	int num = num + 2;
-				System.out.print(num);
+		for (int i = 1; i < N; i++) {
+			if (i % 2 != 0) {
+				a += i; 
+			}else{
+				b += i;   
 			}
+			System.out.println("1+3+5+7+9=" + a);
+			System.out.println("2+4+6+8+10=" + b);
+			System.out.println();
 		}
-
+		sc.close();
 	}
 }

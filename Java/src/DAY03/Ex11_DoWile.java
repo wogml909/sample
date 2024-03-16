@@ -22,7 +22,7 @@ public class Ex11_DoWile {
 			System.out.println("4. 짜장면");
 			System.out.println("5. 물만난면");
 			System.out.println("0. 종료");
-			System.out.println("메뉴 번호 : ");
+			System.out.print("메뉴 번호 : ");
 
 			// 메뉴 번호 입력
 			menuNo = sc.nextInt();

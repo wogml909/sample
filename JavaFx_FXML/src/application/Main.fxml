@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ButtonController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="183.0" layoutY="56.0" prefHeight="64.0" prefWidth="235.0" text="MOUSE_HOME" textFill="#f7cc07">
+         <font>
+            <Font name="Bauhaus 93" size="35.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="248.0" layoutY="267.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="51.0" prefWidth="105.0" text="버튼">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <CardPane prefHeight="400.0" prefWidth="159.0">
+          <Label style="-fx-padding:10;" text="About" />
+          <Label style="-fx-padding:10;" text="menu" />
+          <Label style="-fx-padding:10;" text="borad" />
+      </CardPane>
+   </children>
+</AnchorPane>

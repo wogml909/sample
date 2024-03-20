@@ -21,7 +21,7 @@ public class Ex15_continue {
 	  //남은 실행문을 무시하고 다음 반복을 점프
 	  sum += n;
   }
-  System.err.println("양수의 합 : " + sum);
+  System.out.println("양수의 합 : " + sum);
   sc.close();
 	}
 

@@ -33,8 +33,8 @@ public class Ex09_InputOperator {
 	 
 	 System.out.println("합계 : " + sum);
 	 System.out.println("평균 : " + avg);
-	 System.out.println("평균1 : " + realAvg);
-	 System.out.println("평균2 : " + realAvg);
+	 System.out.printf("평균 : %.2f\n", realAvg);
+	 System.out.println("평균2 : " + realAvg2);
 	 //avg 평균 변수가 정수형(int)이라서 소수부분을 표현할 수 없다.
 	 //평균을 소수점까지 표현하기 위해서는 실수형(double)로 변환해야한다.
 	 

@@ -12,7 +12,7 @@ public class Ex03_ElseIf {
 		//60점이상, D
 		//60점미만, F
 		Scanner sc = new Scanner(System.in);
-		System.err.println("성적 : ");
+		System.out.println("성적 : ");
 		int score = sc.nextInt();
 		char grade = 'F';
 		

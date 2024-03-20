@@ -1,3 +1,4 @@
+
 package Team;
 
 import java.util.Scanner;
@@ -39,4 +40,5 @@ public class Team_04_Q_05 {
 
 		sc.close();
 	}
+
 }

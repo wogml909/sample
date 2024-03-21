@@ -1,6 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "Java/lib/ojdbc8.jar"
-    ]
-}
